@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 const sample = () => 'proba funkcji';
 
 app.set("view engine","hbs");
-app.use("/asssets", express.static(path.join(__dirname, "./assets")))
+app.use("/assets", express.static(path.join(__dirname, "./assets")))
 app.use("/js", express.static(path.join(__dirname, "./js")))
 
 app.get("/", function(req,res){
